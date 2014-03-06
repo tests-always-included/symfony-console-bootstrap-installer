@@ -32,6 +32,7 @@ class PackageInstaller extends LibraryInstaller
         $installAppDir = $installDir . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR;
         copy($installAppDir . 'console', $appDir . 'console');
         copy($installAppDir . 'AppBoot.php', $appDir . 'AppBoot.php');
+        chmod($appDir . 'console', 0755);
     }
 
     /**
