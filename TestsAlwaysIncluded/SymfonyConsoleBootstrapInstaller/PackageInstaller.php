@@ -21,7 +21,7 @@ class PackageInstaller extends LibraryInstaller
         parent::install($repository, $package);
 
         //Copy the console and AppBoot files
-        $rootDir = dirname($this->vendorRoot);
+        $rootDir = dirname($this->vendorDir);
         $appDir = $rootDir . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR;
 
         if(false === is_dir($appDir)) {
