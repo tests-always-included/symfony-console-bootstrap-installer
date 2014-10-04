@@ -13,11 +13,15 @@
         "php": ">=5.3.9",
         "composer-plugin-api": "1.0.0"
     },
+    "require-dev":
+    {
+        "composer/composer": "*@dev"
+    },
     "autoload":
     {
         "psr-0":
         {
-            "TestsAlwaysIncluded\\SymfonyConsoleBootstrapInstaller\\": ""
+            "TestsAlwaysIncluded\\SymfonyConsoleBootstrapInstaller\\": "src"
         }
     },
     "extra":
